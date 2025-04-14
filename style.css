@@ -24,7 +24,9 @@ body, html {
 #left{
     height: 80%;
     width: 45%;
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
 }
 #left h1{
     /* font-family: "mont", sans-serif; */
@@ -39,4 +41,37 @@ body, html {
     height: 80%;
     width: 45%;
     background-color: blue;
+}
+
+#color{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: aqua;
+    width:fit-content;
+    padding: 5px 10px;
+    border-radius: 30px;
+    gap: 10px;
+    
+}
+#color h1{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+#red{
+    width: 23px;
+    height: 23px;
+    background-color: red;
+    /* margin-left: 10px; */
+    border-radius: 50%;
+}
+
+#brown{
+    width: 23px;
+    height: 23px;
+    background-color: brown;
+    border-radius: 50%;
+
 }
