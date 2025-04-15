@@ -1,77 +1,164 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat", sans-serif ;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
-body, html {
-    height: 100%;
-    width: 100%;
-    background-color: #f0f0f0;
+body,
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #f0f0f0;
 }
 
-#main{
-    width: 100%;
-    height:100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    /* gap: 20px; */
+#main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  /* justify-content: space-around; */
+  margin-bottom: 0px;
+  gap: 30px;
 }
 
-#left{
-    height: 80%;
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    /* background-color: red; */
+#left {
+  height: 100%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 100px;
+  /* background-color: red; */
 }
-#left h1{
-    /* font-family: "mont", sans-serif; */
-    font-size: 100px;
-    font-weight: 400;
-    /* color: white; */
-    /* text-align: center; */
-    margin: 20px;
-}
-
-#right{
-    height: 80%;
-    width: 45%;
-    background-color: blue;
+#left h1 {
+  /* font-family: "mont", sans-serif; */
+  font-size: 100px;
+  font-weight: 400;
+  /* color: white; */
+  /* text-align: center; */
+  margin: 20px;
 }
 
-#color{
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    background-color: aqua;
-    width:fit-content;
-    padding: 5px 10px;
-    border-radius: 30px;
-    gap: 10px;
-    
-}
-#color h1{
-    font-size: 20px;
-    font-weight: 600;
-    margin: 20px;
+#left-bottom {
+  height: 40%;
+  width: 100%;
 }
 
-#red{
-    width: 23px;
-    height: 23px;
-    background-color: red;
-    /* margin-left: 10px; */
-    border-radius: 50%;
+#color {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* background-color: aqua; */
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 30px;
+  gap: 10px;
+  border: 1px solid black;
+  margin: 5px;
+}
+#color h1 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 20px;
 }
 
-#brown{
-    width: 23px;
-    height: 23px;
-    background-color: brown;
-    border-radius: 50%;
+#red {
+  width: 20px;
+  height: 20px;
+  background-color: #7d6655;
+  /* margin-left: 10px; */
+  border-radius: 50%;
+}
 
+#brown {
+  width: 20px;
+  height: 20px;
+  background-color: #353331;
+  border-radius: 50%;
+}
+
+#details {
+  width: 70%;
+  margin-top: 50px;
+}
+
+#details h2 {
+  font-size: 20px;
+  font-weight: 500;
+  /* margin: 20px; */
+  margin-bottom: 15px;
+}
+
+#details p {
+  font-size: 15px;
+  font-weight: 400;
+  /* margin: 20px; */
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+#right {
+  height: 80%;
+  width: 25%;
+  /* background-color: blue; */
+  position: relative;
+  margin-bottom: 0;
+}
+
+#right-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5%;
+  width: 100%;
+  /* margin-bottom: 10px; */
+  /* background-color: #55bef2; */
+}
+
+#right-top h4 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#right-top h5 {
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+#right img {
+  position: absolute;
+  width: 100%;
+  height: 95%;
+  object-fit: cover;
+  object-position: 0 10%;
+}
+
+#black-circle {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: rgb(37, 36, 36);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 80%;
+  top: 20%;
+}
+
+#black-circle h5 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#rotate-text {
+  position: absolute;
+  left: -5%;
+  bottom: 10%;
+  rotate: -90deg;
+  transform-origin: left bottom;
 }
